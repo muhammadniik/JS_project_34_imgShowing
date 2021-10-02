@@ -1,0 +1,77 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+@font-face {
+    font-family: 'Vazer';
+    src: url('../fonts/vazir-Black.eot');
+    src: url('../fonts/vazir.ttf') format('truetype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff');
+}
+
+body {
+    font-family: 'Vazer';
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(47, 47, 47);
+}
+
+.cont {
+    /* width: 300px;
+    height: 250px; */
+    background-color: aliceblue;
+    /* text-align: center; */
+    position: relative;
+    /* padding: 10px 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 5px;
+}
+
+.cont h3 {
+    /* position: absolute; */
+}
+
+.cont .imgHolder {
+    width: 100%;
+    height: 150px;
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.cont .imgHolder.active img {
+    display: block;
+}
+
+.cont .imgHolder img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    background-color: aqua;
+    text-align: center;
+    display: none;
+    z-index: 100;
+    object-fit: cover;
+}
+
+.cont input {
+    /* position: absolute; */
+    /* bottom: 2px; */
+    /* left: 10px; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
